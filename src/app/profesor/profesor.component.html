@@ -1,0 +1,32 @@
+<br />
+<div class="container" routerLink="active">
+  <button type="button" class="btn btn-outline-success" [routerLink]="['/estudiante/form']">REGISTRAR ESTUDIANTE</button>
+</div>
+<br />
+
+<div class="card text-dark bg-info mb-3"  >
+    <div class="card-header">Jimmy</div>
+    <div class="card-body">
+        <table class="table caption-top"> <caption>Lista de Estudiantes</caption>
+          <thead>
+            <tr>
+                <th scope="col">ID PROFESOR</th>
+              <th scope="col">SALARIO</th>
+              <th scope="col">ID PERSONA</th>
+
+
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let itemProfesor of ProfesorLista" class="text-bg-secondary mb-3">
+              <td>{{itemProfesor.idprofesor}}</td>
+              <td>{{itemProfesor.salario}}</td>
+              <td>{{itemProfesor.idpersona}}</td>
+
+            </tr>
+          </tbody>
+          </table>
+    </div>
+  </div>
+
+

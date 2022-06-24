@@ -1,0 +1,40 @@
+
+<br />
+<div class="container" routerLink="active">
+  <button type="button" class="btn btn-outline-success" [routerLink]="['/estudiante/form']">REGISTRAR ESTUDIANTE</button>
+</div>
+<br />
+
+<div class="card text-dark bg-info mb-3"  >
+    <div class="card-header">Jimmy</div>
+    <div class="card-body">
+        <table class="table caption-top"> <caption>Lista de Estudiantes</caption>
+          <thead>
+            <tr>
+              <th scope="col">NÚMERO</th>
+              <th scope="col">APELLIDO</th>
+              <th scope="col">EMAIL</th>
+              <th scope="col">NOMBRE</th>
+              <th scope="col">TELEFONO</th>
+              <th scope="col">ID DIRECCION</th>
+              <th scope="col">CODIGO</th>
+              <th scope="col">SERIE</th>
+
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let itemEstudiante of EstudianteLista" class="text-bg-secondary mb-3">
+              <td>{{itemEstudiante.idpersona}}</td>
+              <td>{{itemEstudiante.apellido}}</td>
+              <td>{{itemEstudiante.email}}</td>
+              <td>{{itemEstudiante.nombre}}</td>
+              <td>{{itemEstudiante.telefono}}</td>
+              <td>{{itemEstudiante.iddireccion}}</td>
+              <td>{{itemEstudiante.codigo}}</td>
+              <td>{{itemEstudiante.serie}}</td>
+            </tr>
+          </tbody>
+          </table>
+    </div>
+  </div>
+

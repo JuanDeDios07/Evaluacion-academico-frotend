@@ -1,0 +1,32 @@
+
+<br />
+<div class="container" routerLink="active">
+  <button type="button" class="btn btn-outline-success" [routerLink]="['/asignatura/form']">REGISTRAR ASIGNATURA</button>
+</div>
+<br />
+
+<div class="card text-dark bg-info mb-3"  >
+    <div class="card-header">Jimmy</div>
+    <div class="card-body">
+        <table class="table caption-top"> <caption>Lista de Personas</caption>
+          <thead>
+            <tr>
+              <th scope="col">ID ASIGNATURA</th>
+              <th scope="col">DENOMINACION</th>
+              <th scope="col">CREDITOS</th>
+              <th scope="col">SIGLA</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let itemAsignatura of AsignaturaLista" class="text-bg-secondary mb-3">
+              <td>{{itemAsignatura.idcurso}}</td>
+              <td>{{itemAsignatura.denominacion}}</td>
+              <td>{{itemAsignatura.creditos}}</td>
+              <td>{{itemAsignatura.sigla}}</td>
+
+            </tr>
+          </tbody>
+          </table>
+    </div>
+  </div>
+
